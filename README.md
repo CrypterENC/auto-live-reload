@@ -33,7 +33,7 @@ Perfect for speeding up local development of CLIs, scripts, and small services.
 ## 📦 Installation
 
 ```bash
-pip install auto-auto-live-reload
+pip install auto-live-reload
 ```
 
 Or, for local development:
