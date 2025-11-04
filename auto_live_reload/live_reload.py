@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger('live_reload')
+logger = logging.getLogger('auto_live_reload')
 
 class LiveReload:
     """Simple live reload functionality."""
@@ -72,7 +72,7 @@ class LiveReload:
                 logger.error(f"Error in watcher: {e}")
                 time.sleep(1)
 
-def start_live_reload(patterns=None, delay=2):
+def start_auto_live_reload(patterns=None, delay=2):
     """Start the live reload watcher in a daemon thread.
     
     Args:

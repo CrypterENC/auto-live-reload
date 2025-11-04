@@ -1,6 +1,6 @@
-# 🚀 live_reload
+# 🚀 auto-auto-live-reload
 
-[![PyPI version](https://badge.fury.io/py/live_reload.svg)](https://badge.fury.io/py/live_reload)
+[![PyPI version](https://badge.fury.io/py/auto-auto-live-reload.svg)](https://badge.fury.io/py/auto-auto-live-reload)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -33,7 +33,7 @@ Perfect for speeding up local development of CLIs, scripts, and small services.
 ## 📦 Installation
 
 ```bash
-pip install live_reload
+pip install auto-auto-live-reload
 ```
 
 Or, for local development:
@@ -44,12 +44,12 @@ pip install -e .
 
 ## ⚡ Quick Start
 
-Call `start_live_reload()` as early as possible in your entry point:
+Call `start_auto_live_reload()` as early as possible in your entry point:
 
 ```python
-from live_reload import start_live_reload
+from auto_live_reload import start_auto_live_reload
 
-start_live_reload()
+start_auto_live_reload()
 
 def main():
     print("Running business logic…")
@@ -66,7 +66,7 @@ Any changes to watched files will restart your script automatically.
 You can customize the behavior using arguments:
 
 ```python
-start_live_reload(
+start_auto_live_reload(
     patterns=["*.py", "*.jinja"],
     delay=1,
 )
@@ -76,10 +76,10 @@ start_live_reload(
 
 ## 🖥️ Command-line Helper
 
-A thin CLI wrapper is exposed through `live_reload.main()`. You can wire it into your own console script entry point or invoke it manually during development:
+A thin CLI wrapper is exposed through `auto_live_reload.main()`. You can wire it into your own console script entry point or invoke it manually during development:
 
 ```bash
-python -c "import live_reload; live_reload.main()" --interval 2 --patterns "*.py" "*.md"
+python -c "import auto_live_reload; auto_live_reload.main()" --interval 2 --patterns "*.py" "*.md"
 ```
 
 The available flags mirror the keyword arguments listed above:
@@ -93,7 +93,7 @@ The CLI keeps the current process alive, making it ideal for quickly testing liv
    ```bash
    pip install -e .
    ```
-2. Run your application or sample script with `start_live_reload()` enabled.
+2. Run your application or sample script with `start_auto_live_reload()` enabled.
 3. Make code changes and confirm that the process restarts automatically.
 
 ---

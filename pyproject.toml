@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "live_reload"
+name = "auto-live-reload"
 version = "1.0.0"
 description = "A Python library for live reloading scripts on file changes."
 readme = "README.md"
@@ -14,6 +14,6 @@ requires-python = ">=3.8"
 license = "MIT"
 
 [project.urls]
-Documentation = "https://github.com/CrypterENC/live_reload/blob/main/DOCUMENTATION.md"
-Repository = "https://github.com/CrypterENC/live_reload.git"
+Documentation = "https://github.com/CrypterENC/auto-live-reload/blob/main/DOCUMENTATION.md"
+Repository = "https://github.com/CrypterENC/auto-live-reload.git"
 
